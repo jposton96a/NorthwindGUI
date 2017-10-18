@@ -76,7 +76,7 @@ public abstract class View {
             FXMLLoader fxmlLoader = new FXMLLoader(View.class.getResource(layoutPath));
             Parent root = fxmlLoader.load();
             v = fxmlLoader.getController();
-            v.scene = new Scene(root, v.getWidth(), v.getHeight());
+            v.scene = new Scene(root, root.prefWidth(-1), root.prefHeight(-1));
             v.context = ctx;
         } catch (IOException e) {
             System.err.println("Failed to load layout fxml file: " + layoutPath);
@@ -89,13 +89,6 @@ public abstract class View {
 
     public static void setStage(Stage stage) {
         View.viewStage = stage;
-    }
-
-    public int getWidth() {
-        return DEFAULT_WIDTH;
-    }
-    public int getHeight() {
-        return DEFAULT_HEIGHT;
     }
 
     private Scene getScene() {

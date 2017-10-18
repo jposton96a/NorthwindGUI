@@ -14,6 +14,14 @@ import java.util.Map;
 
 public class ListSupplierView extends View {
     @FXML private GridPane supplierList;
+    @FXML private Button btnBack;
+
+    @FXML
+    public void initialize() {
+        btnBack.setOnAction(event -> this.goBack());
+        supplierList.setHgap(10);
+        supplierList.setVgap(5);
+    }
 
     @Override
     public String getTitle() {

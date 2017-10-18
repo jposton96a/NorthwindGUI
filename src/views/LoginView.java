@@ -30,8 +30,7 @@ public class LoginView extends View {
             textStatus.setText("Connection established!");
             Map<String, Object>  ctx = new HashMap<>();
             ctx.put("db", db);
-            //ctx.put("supplierID", 5);
-            View.loadView("layout_list_supplier", ctx).start();
+            View.loadView("layout_main_menu", ctx).start();
         } else {
             textStatus.setText("Unable to establish connection to database.");
         }

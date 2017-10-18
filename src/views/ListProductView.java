@@ -15,9 +15,11 @@ import java.util.Map;
 
 public class ListProductView extends View {
     @FXML private GridPane productList;
+    @FXML private Button btnBack;
 
     @FXML
     public void initialize() {
+        btnBack.setOnAction(event -> this.goBack());
         productList.setHgap(10);
         productList.setVgap(5);
     }
