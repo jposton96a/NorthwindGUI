@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ListProductView">
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Product List" BorderPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin></Text>
+   </top>
+   <center>
+      <ScrollPane prefHeight="314.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="productList" prefHeight="324.0" prefWidth="597.0">
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

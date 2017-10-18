@@ -1,0 +1,9 @@
+Make sure the SQL Server Browser is Running:
+- Follow the instructions listed by "praveen g"
+https://stackoverflow.com/questions/12523865/jdbc-simple-mssql-connection-example-not-working
+
+Enable TCP/IP for the SQL database
+https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.installclassic.doc_41/install/prep_db/t_configure_microsoft_sql_server_tcp_ip_for_jdbc.html
+
+    * If you can't find the SQL Configuration Manager:
+    https://docs.microsoft.com/en-us/sql/relational-databases/sql-server-configuration-manager
